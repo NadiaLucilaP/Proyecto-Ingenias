@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/prepmesa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a .active, .nav-menu li a:hover {
+    color: #a22543;
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+.banner-text {
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: brown;
+}
+
+.banner-text h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.button1 {
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: brown;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button1:hover {
+    background-color: #fff;
+    color: brown;
+    transition: .5s;
+}
+
+.button2 {
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: brown;
+    border-radius: 5px;
+}
+
+.button2:hover {
+    background-color: brown;
+    color: #fff;
+    transition: .5s;
+}
+
+@media screen and (min-width:768px) {
+    .logo {
+        margin-left: 50px;
+    }
+    nav {
+        height: 100px;
+    }
+    .bar-btn {
+        display: none;
+    }
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    .nav-menu li a {
+        font-size: 16px;
+        background: black;
+    }
+    .banner-text h1 {
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+    .banner-text h2 {
+        font-size: 20px;
+    }
+}
+
+.footer{
+    width: 100%;
+    background-color: #0a141d;
+    
+}
+
+.footer li{
+    list-style: none;
+    color:#fff;
+}
+
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo-1 .red-social a:hover{
+    color: brown;
+}
+
+.footer .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:768px){
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+        text-align: center;
+    }
+}

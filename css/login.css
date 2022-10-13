@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+:root {
+    --rojo: #f0361c;
+    --rojosuave: #f46848;
+    --rojoclaro: #f89a75;
+    --beige: #fbcda1;
+    --beigeclaro: #ffffcd;
+    --blanco: #fff;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--rojoclaro);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95%;
+}
+
+.img-form {
+    background-image: url("../img/Fogon.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    flex: 0 0 calc(60%);
+}
+
+.form {
+    padding: 50px;
+    background-color: var(--rojosuave);
+}
+
+.button {
+    border: 1px solid var(--rojosuave);
+    padding: 10px;
+    background-color: var(--rojo);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.button, .text-form h2, .input label, .password a, .text-form p, .register a {
+    color: var(--blanco);
+}
+
+.text-form {
+    font-size: 50px;
+    text-align: center;
+}
+
+.text-form p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.input label {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.password a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input input[type= "submit"] {
+    background-color: var(--rojoclaro);
+    color: var(--blanco);
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    transition: background-color .3s ease-in-out;
+    margin-top: 20px;
+}
+
+.input input[type= "submit"]:hover {
+    cursor: pointer;
+    background-color: var(--rojo);
+}
+
+.register a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+@media (min-width: 768px){
+    .form-container {
+        display: flex;
+    }
+    .img-form {
+        height: auto;
+        background-position: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-form {
+        background-position: center;
+    }
+}
