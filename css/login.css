@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 html {
     box-sizing: border-box;
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik', sans-serif;
     background-color: var(--rojoclaro);
     display: flex;
     align-items: center;
@@ -62,6 +62,10 @@ body {
 .text-form {
     font-size: 50px;
     text-align: center;
+}
+
+h2 {
+    font-size: 35px;
 }
 
 .text-form p {

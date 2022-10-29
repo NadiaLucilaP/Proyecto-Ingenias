@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\reservas.css">
+    <title>Reservas</title>
+</head>
+<body>
+    <div class="form-container container">
+        <div class="img-form">
+        </div>
+        <form class="form">
+            <div>
+                <a class="button" href="index.html">Volver al Inicio</a>
+            </div> <br>
+            <div class="text-form">
+                <h5>Reserve su mesa</h5>
+            </div>
+            <div class="input">
+                <label for="nombre">Nombre</label>
+                <input placeholder="Ingrese su Nombre" type="text" id="nombre">
+            </div>
+            <div class="input">
+                <label for="apellido">Apellido</label>
+                <input placeholder="Ingrese su Apellido" type="text" id="apellido">
+            </div>
+            <div class="input">
+                <label for="start">Fecha</label>
+                <input type="date" id="start" value="22-01-2022" min="01-01-2022" max="31-12-2022">
+            </div>
+            <div class="input">
+                <label for="appt-time">Horario</label>
+                <input type="time" id="appt-time" value="13:30" min="12:00" max="22:30">
+            </div>
+            <div class="input">
+                <label for="tentacles">Cantidad de Personas (1-15):</label>
+                <input type="number" id="tentacles" min="1" max="15">
+            </div>
+            <div class="input">
+                <input type="submit" value="Solicitar Reserva de Mesa">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
